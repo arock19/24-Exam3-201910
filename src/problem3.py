@@ -223,8 +223,13 @@ def problem3(seq_of_seq):
       :type seq_of_seq: list of list of int
       :rtype: (list of int) | int
     """
+    for a in range(len(seq_of_seq)):
+        for b in range(len(seq_of_seq[a])):
+            if is_prime(seq_of_seq[a][b]):
+                return seq_of_seq[a]
+    return -1
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # TO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
