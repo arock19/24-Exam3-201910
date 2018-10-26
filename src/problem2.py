@@ -2,12 +2,13 @@
 Exam 3, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  October 2018.
+         their colleagues and Achintya Gupta.  October 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # TO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
+import math
 
 
 def main():
@@ -89,8 +90,13 @@ def problem2(sequence):
     Type hints:
       :type sequence [list]
     """
+    index=0
+    for k in range(len(sequence)):
+        if (sequence[k]**2)>(sequence[index]**2):
+            index=k
+    return index
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # TO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
